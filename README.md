@@ -10,48 +10,24 @@ Sastrawi Tokenizer adalah library PHP untuk melakukan tokenization pada Bahasa I
 Tokenization
 -----------------
 
-    Saya sedang belajar NLP Bahasa Indonesia.
+    Saya Bangga jadi warga nahdlatul ulama.
 
 Text di atas dapat di-tokenize menjadi:
 
 ```json
-["Saya", "sedang", "belajar", "NLP", "Bahasa", "Indonesia", "."]
+["Saya", "Bangga", "Jadi", "Warga", "nahdlatul", "ulama", "."]
 ```
 
-Sastrawi Tokenizer
+Tokenizer
 --------------------------
 
 - _Library PHP_ untuk melakukan _tokenization_ pada Bahasa Indonesia.
 - Mudah diintegrasikan dengan _framework_ / _package_ lainnya.
 - Mempunyai _API_ yang sederhana dan mudah digunakan.
 
-Demo
-----
-[http://sastrawi.github.io/tokenizer.html](http://sastrawi.github.io/tokenizer.html)
-
-
-Cara Install
--------------
-
-Sastrawi Tokenizer dapat diinstall dengan [Composer](https://getcomposer.org).
-
-1. Buka terminal (command line) dan arahkan ke directory project Anda.
-2. [Download Composer](https://getcomposer.org/download/) sehingga file `composer.phar` berada di directory tersebut.
-3. Tambahkan Sastrawi Sentence Detector ke file `composer.json` Anda :
-
 ```bash
 php composer.phar require sastrawi/tokenizer:0.*
 ```
-
-Jika Anda masih belum memahami bagaimana cara menggunakan Composer, silahkan baca [Getting Started with Composer](https://getcomposer.org/doc/00-intro.md).
-
-
-Penggunaan
------------
-
-#### Melalui kode PHP
-
-Copy kode berikut di directory project anda. Lalu jalankan file tersebut.
 
 ```php
 <?php
@@ -70,31 +46,12 @@ var_dump($tokens);
 
 ```
 
-#### Melalui CLI (Command Line Interface)
-
-Sastrawi-tokenize CLI membaca teks dari STDIN dan menulis token-tokennya ke STDOUT.
 
 ```sh
 $ echo Saya sedang belajar NLP Bahasa Indonesia. | php vendor/bin/sastrawi-tokenize
 ```
 
-Untuk menampilkan bantuan:
 
 ```sh
 $ php vendor/bin/sastrawi-tokenize --help
 ```
-
-Lisensi
---------
-
-Sastrawi Tokenizer dirilis di bawah lisensi MIT License (MIT).
-Library ini memuat daftar singkatan Bahasa Indonesia dengan lisensi [Creative Common BY SA](https://creativecommons.org/licenses/by-sa/3.0/deed.id) yang bersumber dari [http://id.wiktionary.org/wiki/Wiktionary:Daftar_singkatan_dan_akronim_bahasa_Indonesia](http://id.wiktionary.org/wiki/Wiktionary:Daftar_singkatan_dan_akronim_bahasa_Indonesia).
-
-
-Informasi Lebih Lanjut
-----------------------
-
-- [FAQ](https://github.com/sastrawi/tokenizer/wiki/FAQ)
-- [Wiki](https://github.com/sastrawi/tokenizer/wiki)
-- [Roadmap](https://github.com/sastrawi/tokenizer/issues/milestones)
-- [Bug Report, Questions, Ideas](https://github.com/sastrawi/tokenizer/issues)
